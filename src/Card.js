@@ -11,9 +11,14 @@ class Card extends React.Component {
         return (
             <div>
                 <h1>{this.props.title}</h1>
-                <p>{this.props.description}</p>
-                <img src="http://tiny.cc/gjq1dz"></img>
-            </div>
+                {this.props.children}
+           </div>
+           
+            // <div>
+            //     <h1>{this.props.title}</h1>
+            //     <p>{this.props.description}</p>
+            //     <img src="http://tiny.cc/gjq1dz"></img>
+            // </div>
         )
     }
 }
